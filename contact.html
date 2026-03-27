@@ -1,0 +1,157 @@
+<!-- Hack Orbit Project
+Copyright © Hack Orbit Global.
+Open-source for learning only. Credit required. No commercial use. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — DSA Visualizer | Hack Orbit</title>
+    <meta name="description" content="Get in touch with the DSA Visualizer team. Questions, feedback, or collaboration requests — we'd love to hear from you.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="DSA Visualizer Home">
+                <svg class="logo-svg" viewBox="0 0 40 40" width="40" height="40">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00aaff"/>
+                            <stop offset="100%" style="stop-color:#aa00ff"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="url(#logoGrad)" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="12" fill="none" stroke="url(#logoGrad)" stroke-width="1.5" stroke-dasharray="4 3"/>
+                    <circle cx="20" cy="20" r="4" fill="url(#logoGrad)"/>
+                </svg>
+                <span class="logo-text">
+                    <span class="logo-hack">Hack</span><span class="logo-orbit">Orbit</span>
+                    <span class="logo-dsa">DSA</span>
+                </span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#visualizer" class="nav-link">Visualizer</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="privacy.html" class="nav-link">Privacy</a>
+                <a href="terms.html" class="nav-link">Terms</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Content -->
+    <main class="page-content">
+        <h1>Get in <span class="gradient-text">Touch</span></h1>
+        <p class="subtitle">Have a question, suggestion, or want to collaborate? We'd love to hear from you.</p>
+
+        <form class="contact-form" id="contactForm" aria-label="Contact form">
+            <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" name="name" required placeholder="John Doe" aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" name="email" required placeholder="john@example.com" aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="message" required placeholder="Tell us what's on your mind..." rows="5" aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="contactSubmit">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+                ✅ Thank you! Your message has been sent. We'll get back to you soon.
+            </div>
+        </form>
+
+        <div style="margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border-glass);">
+            <h3>Other Ways to Reach Us</h3>
+            <p style="color: var(--text-secondary); margin-top: 8px;">
+                📧 Email: <a href="mailto:contact@hackorbit.dev">contact@hackorbit.dev</a><br>
+                💬 Discord: <a href="https://discord.gg/GVNnacYENf" target="_blank">Join our community</a><br>
+                🐙 GitHub: <a href="https://github.com/Hack-Orbit-Global" target="_blank">Hack-Orbit-Global</a>
+            </p>
+        </div>
+
+        <!-- Ad Placeholder -->
+        <div class="ad-placeholder" style="margin-top: 40px; min-height: 90px;" aria-label="Advertisement">
+            <span class="ad-label">Ad Space</span>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="footer-logo"><span class="logo-hack">Hack</span><span class="logo-orbit">Orbit</span> DSA</span>
+                <p>An open-source DSA Visualizer. Built in public, for everyone.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <a href="index.html">Home</a>
+                    <a href="index.html#visualizer">Visualizer</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <a href="https://github.com/Hack-Orbit-Global" target="_blank">GitHub</a>
+                    <a href="https://discord.gg/GVNnacYENf" target="_blank">Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Built in public by <a href="https://github.com/Hack-Orbit-Global" target="_blank">Hack Orbit</a> · 2026 · Open Source</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav toggle
+        document.getElementById('navHamburger').addEventListener('click', function() {
+            this.classList.toggle('open');
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+
+        // Contact form handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const message = document.getElementById('contactMessage').value;
+
+            // In production, send to server or email service
+            console.log('Contact form submitted:', { name, email, message });
+
+            // Show success message
+            document.getElementById('formSuccess').style.display = 'block';
+            this.reset();
+
+            // Hide after 5 seconds
+            setTimeout(() => {
+                document.getElementById('formSuccess').style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
